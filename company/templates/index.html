@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Главная страница</h1>
+
+  <ul>
+    <li><strong>Количество сотрудников:</strong> {{ num_employees }}</li>
+    <li><strong>Количество должностей:</strong> {{ num_positions }}</li>
+    <li><strong>Количество подразделений в организации:</strong> {{ num_subdivisions }}</li>
+    <li><strong>Количество отделов:</strong> {{ num_departments }}</li>
+  </ul>
+{% endblock %}

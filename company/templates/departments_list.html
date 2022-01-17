@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+ <h3>Список отделов</h3>
+    {% for department in departments %}
+        <div>
+            <h5>{{ department.name }} </a></h5>
+        </div>
+    {% endfor %}
+{% endblock %}

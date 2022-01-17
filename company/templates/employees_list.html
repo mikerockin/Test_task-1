@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<a href="{% url 'company:employees_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+ <h3>Список сотрудников в БД</h3>
+    {% for employe in employees %}
+        <div>
+            <h5><a href="{% url 'company:employe_detail' id=employe.id %}"> {{ employe.second_name }} {{ employe.first_name }} {{ employe.third_name }}
+                {{ employe.position }} {{ employe.department }} {{ employe.date_of_employment }} {{ current_delta }}</a></h5>
+            <td><a href="delete/{{employe.id}}">Удалить</a></td>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+
+

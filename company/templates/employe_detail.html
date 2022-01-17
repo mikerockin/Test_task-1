@@ -1,0 +1,20 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+        <a class="btn btn-default" href="{% url 'company:employe_edit' id=employe.id %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <center>
+  <ul>
+    <li><strong>Фамилия сотрудника:</strong> {{ employe.second_name }}</li>
+    <li><strong>Имя фамилия:</strong> {{ employe.first_name }}</li>
+    <li><strong>Отчество сотрудника:</strong> {{ employe.third_name }}</li>
+    <li><strong>Должность сотрудника:</strong> {{ employe.position }}</li>
+    <li><strong>Подразделение:</strong> {{ employe.subdivision  }}</li>
+    <li><strong>Дата устройства на работу:</strong> {{ employe.date_of_employment }}</li>
+    <li><strong>Стаж, лет:</strong> {{ current_delta }}</li>
+
+
+  </ul>
+        </center>
+
+
+{% endblock %}

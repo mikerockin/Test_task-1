@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<a href="{% url 'company:subdivisions_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+ <h3>Список подразделений</h3>
+   <table>
+    {% for subdivision in subdivisions %}
+           <tr>
+             <td>{{ subdivision.name }} </td>
+               <td><a href="delete/{{ subdivision.id }}">Удалить</a></td>
+           </tr>
+   <table>
+    {% endfor %}
+{% endblock %}
+

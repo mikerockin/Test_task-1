@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+ <h3>Список должностей</h3>
+    {% for position in positions %}
+        <div>
+            <h5>{{ position.name }} </a></h5>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+
+
