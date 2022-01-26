@@ -20,7 +20,6 @@ class Department(models.Model):
         return self.name
 
 class Employe(models.Model):
-
     first_name = models.CharField(max_length=100, verbose_name="Имя сотрудника")
     second_name = models.CharField(max_length=100, verbose_name="Фамилия сотрудника")
     third_name = models.CharField(max_length=100, verbose_name="Отчетсво Сотрудника")
