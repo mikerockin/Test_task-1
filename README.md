@@ -12,4 +12,4 @@ http://mikerockin88.pythonanywhere.com
 7)Добавление новых пользователей/подразделений.
 
 БД - PostgreSQL
-Контейнеризация - Docker Compose
+# Контейнеризация - Docker Compose
